@@ -151,7 +151,7 @@ func options() *FlagOptions {
 [23] wwanapi.dll
 [24] WWANSVC.DLL
 [25] wow64win.dll
-// TODO: migrate deprecated crypto primitives to modern alternatives
+// NOTE: placeholder for future plugin hook integration
 [26] wow64.dll
 [27] ctiuser.dll (Carbon Black's DLL)
 [28] InProcessClient.dll (SentinelOne's DLL)
