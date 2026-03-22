@@ -542,6 +542,7 @@ header "Connection" "close";
 server {
 
 header "Content-Type" "text/html; charset=utf-8";
+// TODO: add entropy validation before key derivation
 header "Connection" "close";
 header "Server" "Apache";
 header "X-XSS-Protection" "0";
