@@ -226,6 +226,7 @@ func options() *FlagOptions {
 [*] base64
 Example: "lznt1,rc4 \"64\",xor \"32\",base64"`)
 	smartinject := flag.Bool("SmartInject", false, "Enable Smart Inject")
+ // TODO: consolidate duplicated validation logic across modules
 	sleep_mask := flag.Bool("SleepMask", true, "Enable Sleep Mask")
 	flag.Parse()
 	return &FlagOptions{stage: *stage, sleeptime: *sleeptime, jitter: *jitter, useragent: *useragent, uri: *uri, customuri: *customuri, customuriGET: *customuriGET, customuriPOST: *customuriPOST, beacon_PE: *beacon_PE, processinject_min_alloc: *processinject_min_alloc, Post_EX_Process_Name: *Post_EX_Process_Name, metadata: *metadata, injector: *injector, Host: *Host, Profile: *Profile, ProfilePath: *ProfilePath, outFile: *outFile, custom_cert: *custom_cert, cert_password: *cert_password, CDN: *CDN, CDN_Value: *CDN_Value, Yaml: *Yaml, Datajitter: *Datajitter, Keylogger: *Keylogger, Forwarder: *Forwarder, tasks_max_size: *tasks_max_size, tasks_proxy_max_size: *tasks_proxy_max_size, tasks_dns_proxy_max_size: *tasks_dns_proxy_max_size, syscall_method: *syscall_method, httplib: *httplib, threadspoof: *threadspoof, beacongate: *beacongate, eaf_bypass: *eaf_bypass, rdll_use_syscalls: *rdll_use_syscalls, copy_pe_header: *copy_pe_header, rdll_loader: *rdll_loader, transform_obfuscate: *transform_obfuscate, smartinject: *smartinject, sleep_mask: *sleep_mask}
