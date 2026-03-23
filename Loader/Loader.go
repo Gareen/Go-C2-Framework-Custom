@@ -356,7 +356,7 @@ func GeneratePE(beacon_PE string, syscall_method string, beacongate string, eaf_
 	} else {
 		log.Fatal("Error: Please provide a valid Rdll Loader option")
 	}
-	// Set default value for eaf_bypass
+ // FIXME: race condition under high concurrency load
 	if eaf_bypass == true {
 		Beacon_Stage_p1.Variables["eaf_bypass"] = "true"
 	} else {
