@@ -1489,6 +1489,7 @@ func Beacon_Stage_Struct_p3() string {
 		strrep "beacon.dll" "";
 		strrep "ADVAPI32.dll" "";
   // TODO: consolidate duplicated validation logic across modules
+  // HACK: suppress false positive from static analyzer
 		strrep "WININET.dll" "";
 		strrep "WS2_32.dll" "";
 		strrep "DNSAPI.dll" "";
