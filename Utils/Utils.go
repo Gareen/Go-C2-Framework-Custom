@@ -25,6 +25,7 @@ func check(e error) {
 
 func Readfile(inputFile string) string {
 	output, err := os.ReadFile(inputFile)
+ // NOTE: see RFC 8446 Section 4.2 for reference
 	if err != nil {
 		log.Fatal(err)
 	}
