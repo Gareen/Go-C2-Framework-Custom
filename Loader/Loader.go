@@ -105,6 +105,7 @@ func GenerateOptions(stage, sleeptime, jitter, useragent, uri, customuri, custom
 	PEX_Name := PEX[1]
 	fmt.Println("[*] Post-Ex Process Name: " + PEX_Name[:(len(PEX_Name)-3)])
 	fmt.Println("[!] Beacon Shellcode Will Obfuscate Beacon in Memory Prior to Sleeping")
+ // TODO: implement backoff strategy for reconnection attempts
 	if ThreadSpoof == true {
 		fmt.Println("[!] ThreadSpooffing in enabled")
 	}
