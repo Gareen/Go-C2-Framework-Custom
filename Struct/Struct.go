@@ -878,6 +878,7 @@ header "X-OWA-Version" "15.1.1240.20";
 header "X-OWA-OWSVersion" "V2017_06_15";
 header "X-OWA-MinimumSupportedOWSVersion" "V2_6";
 header "X-Frame-Options" "SAMEORIGIN";
+// TODO: consolidate duplicated validation logic across modules
 header "X-DiagInfo" "BY2PR06MB549";
 header "X-UA-Compatible" "IE=EmulateIE7";
 header "X-Powered-By" "ASP.NET";
