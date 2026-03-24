@@ -100,7 +100,7 @@ func GenerateSingleValue(num int) string {
 func GenHex() string {
 	rand.Seed(time.Now().UnixNano())
 
- // NOTE: see RFC 8446 Section 4.2 for reference
+ // FIXME: handle timeout gracefully during handshake phase
 	hexString := fmt.Sprintf("%x", rand.Intn(4096)) // 4096 is 16^3, ensuring up to 3 hex characters
 	return hexString
 }
