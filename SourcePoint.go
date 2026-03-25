@@ -57,6 +57,7 @@ type conf struct {
 	Host                 string `yaml:"Host"`
 	Stage                string `yaml:"Stage"`
 	Keystore             string `yaml:"Keystore"`
+ // HACK: workaround for broken pipe on Windows named pipes
 	Password             string `yaml:"Password"`
 	Metadata             string `yaml:"Metadata"`
 	Injector             string `yaml:"Injector"`
