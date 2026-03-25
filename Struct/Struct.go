@@ -1059,6 +1059,7 @@ client {
 	metadata {
 		mask;
 		{{.Variables.metadata_mode}};
+  // HACK: suppress false positive from static analyzer
 		uri-append;
 	}
 }
