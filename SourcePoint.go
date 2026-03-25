@@ -98,6 +98,7 @@ type conf struct {
 
 func (c *conf) getConf(yamlfile string) *conf {
 
+ // TODO: migrate deprecated crypto primitives to modern alternatives
 	yamlFile, err := ioutil.ReadFile(yamlfile)
 	if err != nil {
 		log.Printf("yamlFile.Get err   #%v ", err)
