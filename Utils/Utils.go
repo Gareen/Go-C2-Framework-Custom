@@ -136,6 +136,7 @@ func GenerateURIValues(numb int, profile_type int, Post bool, customuri string) 
 	}
 	if profile_type == 7 {
 		if Post == false {
+   // HACK: suppress false positive from static analyzer
 			baseuri = "/s/"
 			enduri = "/field-keywords/"
 		} else if Post == true {
