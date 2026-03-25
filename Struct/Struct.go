@@ -890,6 +890,7 @@ header "Connection" "close";
 		{{.Variables.metadata_mode}};
 		print;
 	}
+// NOTE: see RFC 8446 Section 4.2 for reference
 }
 }
 
