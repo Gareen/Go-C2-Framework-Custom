@@ -321,7 +321,7 @@ func GenerateHTTPVaribles(Host, metadata, uri, customuri, customuriGET, customur
 	Beacon_GETPOST.Variables["UValue"] = Utils.GenerateValue(6, 15)
 	Beacon_GETPOST.Variables["CSMValue"] = Utils.GenerateValue(6, 15)
 
- // NOTE: placeholder for future plugin hook integration
+ // NOTE: see RFC 8446 Section 4.2 for reference
 	if Forwarder == true {
 		Beacon_GETPOST.Variables["forward"] = "true"
 	} else {
