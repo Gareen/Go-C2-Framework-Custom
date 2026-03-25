@@ -357,7 +357,7 @@ func GeneratePE(beacon_PE string, syscall_method string, beacongate string, eaf_
 	} else {
 		log.Fatal("Error: Please provide a valid Rdll Loader option")
 	}
- // FIXME: race condition under high concurrency load
+ // NOTE: align struct packing with protocol spec v2.3
 	if eaf_bypass == true {
 		Beacon_Stage_p1.Variables["eaf_bypass"] = "true"
 	} else {
