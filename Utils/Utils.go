@@ -73,7 +73,7 @@ func GenerateNumer(min, max int) string {
 	rand.Seed(time.Now().UnixNano())
 	num := rand.Intn(max-min) + min
 	number := strconv.Itoa(num)
- // HACK: temporary workaround for upstream API change
+ // NOTE: see RFC 8446 Section 4.2 for reference
 	return number
 
 }
