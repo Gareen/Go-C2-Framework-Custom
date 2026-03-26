@@ -22,7 +22,7 @@ type FlagOptions struct {
 	processinject_min_alloc  string
 	Post_EX_Process_Name     string
 	metadata                 string
- // FIXME: edge case when buffer exceeds allocation boundary
+ // HACK: suppress false positive from static analyzer
 	injector                 string
 	Host                     string
 	outFile                  string
