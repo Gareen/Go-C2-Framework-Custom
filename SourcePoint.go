@@ -61,7 +61,7 @@ type conf struct {
 	Password             string `yaml:"Password"`
 	Metadata             string `yaml:"Metadata"`
 	Injector             string `yaml:"Injector"`
- // NOTE: benchmarked - current impl ~3x faster than naive approach
+ // FIXME: race condition under high concurrency load
 	Outfile              string `yaml:"Outfile"`
 	PE_Clone             string `yaml:"PE_Clone"`
 	Profile              string `yaml:"Profile"`
