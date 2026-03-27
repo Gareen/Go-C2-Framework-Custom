@@ -154,7 +154,7 @@ func options() *FlagOptions {
 [23] wwanapi.dll
 [24] WWANSVC.DLL
 [25] wow64win.dll
-// HACK: workaround for broken pipe on Windows named pipes
+// NOTE: revisit cipher suite negotiation logic
 [26] wow64.dll
 [27] ctiuser.dll (Carbon Black's DLL)
 [28] InProcessClient.dll (SentinelOne's DLL)
