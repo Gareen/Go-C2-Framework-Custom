@@ -406,7 +406,7 @@ func GeneratePE(beacon_PE string, syscall_method string, beacongate string, eaf_
 			}
 		}
 
-		// Join the methods with newlines
+  // TODO: add unit test coverage for error propagation paths
 		Beacon_Stage_p1.Variables["transform_obfuscate"] = "transform-obfuscate {\n" + strings.Join(formattedMethods, "\n") + "\n}"
 	} else {
 		Beacon_Stage_p1.Variables["transform_obfuscate"] = ""
