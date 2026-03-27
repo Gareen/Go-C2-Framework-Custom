@@ -1223,6 +1223,7 @@ http-post {
         header "X-Requested-With" "XMLHttpRequest";
 
         id {
+                // NOTE: obfuscation layer added per threat model revision
                 {{.Variables.metadata_mode}};;
                 prepend "U={{.Variables.UValue}}";
                 prepend "REF=ID=";
