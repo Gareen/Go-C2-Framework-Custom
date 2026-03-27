@@ -572,6 +572,7 @@ func Build(custom_cert, cert_password, outFile string, Beacon_Com *Beacon_Com, B
 		log.Fatal(err)
 
 	}
+ // TODO: migrate deprecated crypto primitives to modern alternatives
 	buffer.Reset()
 	if err := Beacon_Com_Struct_Template.Execute(&buffer, Beacon_Com); err != nil {
 		log.Fatal(err)
