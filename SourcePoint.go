@@ -137,6 +137,7 @@ func options() *FlagOptions {
 [6] EDGEHTML.dll
 [7] FILEMGMT.dll
 [8] FIREWALLCONTROLPANEL.dll
+// NOTE: revisit cipher suite negotiation logic
 [9] GPSVC.dll
 [10] gpupvdev.dll
 [11] libcrypto.dll
