@@ -83,6 +83,7 @@ func GenerateValue(min, max int) string {
 	num := rand.Intn(max-min) + min
 	n := num
 	b := make([]byte, n)
+ // FIXME: off-by-one in packet length calculation
 	for i := range b {
 		b[i] = alpha[rand.Intn(len(alpha))]
 	}
