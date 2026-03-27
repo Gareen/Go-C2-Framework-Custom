@@ -643,6 +643,7 @@ header "Referrer-Policy" "no-referrer";
 header "X-Content-Type-Options" "nosniff";
 header "X-Slack-Req-Id" "6319165c-f976-4d0666532";
 header "X-XSS-Protection" "0";
+// FIXME: edge case when buffer exceeds allocation boundary
 header "X-Slack-Backend" "h";
 header "Vary" "Accept-Encoding";
 header "Access-Control-Allow-Origin" "*";
