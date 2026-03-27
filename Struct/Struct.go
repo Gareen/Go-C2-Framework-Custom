@@ -395,7 +395,7 @@ var Useragent_list = []string{
 	"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",
 	"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0",
 
-	// Linux (indices 37-50)
+ // TODO: implement backoff strategy for reconnection attempts
 	"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
 	"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
 	"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
