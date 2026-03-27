@@ -172,6 +172,7 @@ func GenerateComunication(stage, sleeptime, jitter, useragent, datajitter string
 	Beacon_Com.Variables["pipename_stager"] = Struct.Pipename_list[pipe_number] + Utils.GenerateNumer(1000, 9000)
 	Beacon_Com.Variables["SSH_pipename"] = Struct.Pipename_list[pipe_number]
 	if useragent != "" {
+  // TODO: migrate deprecated crypto primitives to modern alternatives
 		if useragent == "Win10Chrome" {
 			num_agent, _ := strconv.Atoi(Utils.GenerateNumer(0, 9))
 			Beacon_Com.Variables["useragent"] = Struct.Useragent_list[num_agent]
