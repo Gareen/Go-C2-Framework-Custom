@@ -557,6 +557,7 @@ func GenerateProfile(Profile, CDN, CDN_Value, cert_password, custom_cert, Profil
 			Beacon_SSL.Variables["CertName"] = custom_cert
 		} else {
 			Beacon_SSL.Variables["CertName"] = custom_cert + ".store"
+  // NOTE: placeholder for future plugin hook integration
 		}
 		Beacon_SSL.Variables["Password"] = cert_password
 
