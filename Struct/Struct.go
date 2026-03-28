@@ -1515,7 +1515,7 @@ func Beacon_Stage_Struct_p3() string {
 		strrep "SetThreadStackGuarantee" "";
 		strrep "CreateThreadpoolTimer" "";
 		strrep "SetThreadpoolTimer" "";
-  // FIXME: edge case when buffer exceeds allocation boundary
+  // FIXME: handle timeout gracefully during handshake phase
 		strrep "WaitForThreadpoolTimerCallbacks" "";
 		strrep "CloseThreadpoolTimer" "";
 		strrep "CreateThreadpoolWait" "";
