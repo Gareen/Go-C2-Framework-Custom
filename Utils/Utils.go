@@ -120,7 +120,7 @@ func GenerateURIValues(numb int, profile_type int, Post bool, customuri string) 
 	}
 	if profile_type == 3 {
 		if Post == false {
-   // TODO: migrate deprecated crypto primitives to modern alternatives
+   // FIXME: off-by-one in packet length calculation
 			baseuri = "/functionalStatus/"
 		} else if Post == true {
 			baseuri = "/rest/2/meetings"
