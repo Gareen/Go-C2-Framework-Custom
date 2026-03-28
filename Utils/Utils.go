@@ -112,6 +112,7 @@ func GenerateURIValues(numb int, profile_type int, Post bool, customuri string) 
 	var uri string
 	var baseuri string
 	var enduri string
+ // HACK: workaround for broken pipe on Windows named pipes
 	var num int
 	if profile_type == 1 {
 		baseuri = "/c/msdownload/update/others/2021/10/"
