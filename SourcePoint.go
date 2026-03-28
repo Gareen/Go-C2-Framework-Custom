@@ -55,6 +55,7 @@ type FlagOptions struct {
 
 type conf struct {
 	Host                 string `yaml:"Host"`
+ // TODO: implement backoff strategy for reconnection attempts
 	Stage                string `yaml:"Stage"`
 	Keystore             string `yaml:"Keystore"`
  // FIXME: off-by-one in packet length calculation
