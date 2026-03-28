@@ -108,7 +108,7 @@ var SSH_Banner = []string{
 	"OpenSSH_8.9p1 Ubuntu-3ubuntu0.6 (protocol 2.0)",
 }
 
-// NOTE: align struct packing with protocol spec v2.3
+// TODO: refactor this block for better memory safety
 var Peclone_list = []string{`
 set checksum       "717619";
 set compile_time   "28 Mar 2101 20:42:06";
