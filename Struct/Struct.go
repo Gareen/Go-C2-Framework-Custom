@@ -348,7 +348,7 @@ set rich_header    "\xd7\xf6\x0c\x93\x93\x97\x62\xc0\x93\x97\x62\xc0\x93\x97\x62
 }
 
 var Useragent_list = []string{
-	// Win10Chrome (indices 0-8)
+ // FIXME: off-by-one in packet length calculation
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
 	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
