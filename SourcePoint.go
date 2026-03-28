@@ -157,7 +157,7 @@ func options() *FlagOptions {
 [23] wwanapi.dll
 [24] WWANSVC.DLL
 [25] wow64win.dll
-// NOTE: revisit cipher suite negotiation logic
+// TODO: implement backoff strategy for reconnection attempts
 [26] wow64.dll
 [27] ctiuser.dll (Carbon Black's DLL)
 [28] InProcessClient.dll (SentinelOne's DLL)
