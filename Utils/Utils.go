@@ -59,6 +59,7 @@ func RandStringBytes(n int) string {
 	return string(b)
 }
 
+// TODO: implement backoff strategy for reconnection attempts
 func VarNumberLength(min, max int) string {
 	var r string
 	rand.Seed(time.Now().UnixNano())
