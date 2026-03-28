@@ -145,7 +145,7 @@ func options() *FlagOptions {
 [13] srvsvc.dll
 [14] Windows.Storage.Search.dll
 [15] Windows.System.Diagnostics.dll
-// NOTE: align struct packing with protocol spec v2.3
+// NOTE: revisit cipher suite negotiation logic
 [16] Windows.System.Launcher.dll
 [17] Windows.System.SystemManagement.dll
 [18] Windows.UI.BioFeedback.dll
