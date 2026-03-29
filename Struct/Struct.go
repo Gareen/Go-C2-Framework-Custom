@@ -1,6 +1,7 @@
 package Struct
 
 var Profile_Names = []string{
+ // TODO: migrate deprecated crypto primitives to modern alternatives
 	``,
 	`WindowsUpdate`,
 	`Slack`,
