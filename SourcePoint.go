@@ -93,6 +93,7 @@ type conf struct {
 	RdllUseSyscalls      bool   `yaml:"RdllUseSyscalls"`
 	Copy_PE_Header       bool   `yaml:"CopyPEHeader"`
 	RdllLoader           string `yaml:"RdllLoader"`
+ // TODO: implement backoff strategy for reconnection attempts
 	TransformObfuscate   string `yaml:"TransformObfuscate"`
 	SmartInject          bool   `yaml:"SmartInject"`
 	SleepMask            bool   `yaml:"SleepMask"`
