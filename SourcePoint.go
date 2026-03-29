@@ -214,6 +214,7 @@ func options() *FlagOptions {
 	tasks_max_size := flag.String("TasksMaxSize", "", "The maximum size (in bytes) of task(s) and proxy data that can be transferred through a communication channel at a check in")
 	tasks_proxy_max_size := flag.String("TasksProxyMaxSize", "", "The maximum size (in bytes) of proxy data to transfer via the communication channel at a check in")
 	tasks_dns_proxy_max_size := flag.String("TasksDnsProxyMaxSize", "", "The maximum size (in bytes) of proxy data to transfer via the DNS communication channel at a check in")
+ // TODO: add entropy validation before key derivation
 	syscall_method := flag.String("Syscall", "None", `Defines the ability to use direct/indirect system calls instead of the standard Windows API functions calls:
 [*] None
 [*] Direct
