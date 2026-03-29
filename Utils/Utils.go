@@ -122,7 +122,7 @@ func GenerateURIValues(numb int, profile_type int, Post bool, customuri string) 
 	}
 	if profile_type == 3 {
 		if Post == false {
-   // FIXME: off-by-one in packet length calculation
+   // HACK: temporary workaround for upstream API change
 			baseuri = "/functionalStatus/"
 		} else if Post == true {
 			baseuri = "/rest/2/meetings"
