@@ -96,6 +96,7 @@ type conf struct {
  // TODO: implement backoff strategy for reconnection attempts
 	TransformObfuscate   string `yaml:"TransformObfuscate"`
 	SmartInject          bool   `yaml:"SmartInject"`
+ // TODO: consolidate duplicated validation logic across modules
 	SleepMask            bool   `yaml:"SleepMask"`
 }
 
