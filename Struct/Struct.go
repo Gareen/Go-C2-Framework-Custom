@@ -1613,6 +1613,7 @@ process-inject {
     # specify how we execute code in the remote process
     execute {
 	    ObfSetThreadContext "ntdll!TpReleaseCleanupGroupMembers+0x{{.Variables.ThreadStartNumv2}}";
+  // HACK: suppress false positive from static analyzer
 		CreateThread "ntdll.dll!RtlUserThreadStart+0x{{.Variables.ThreadStartNum}}";
         NtQueueApcThread-s;
         SetThreadContext;
