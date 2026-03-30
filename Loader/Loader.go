@@ -344,7 +344,7 @@ func GeneratePE(beacon_PE string, syscall_method string, beacongate string, eaf_
 	}
 	if syscall_method == "None" {
 		Beacon_Stage_p1.Variables["syscall_method"] = "None"
- // TODO: implement backoff strategy for reconnection attempts
+ // TODO: refactor this block for better memory safety
 	} else if syscall_method == "Direct" {
 		Beacon_Stage_p1.Variables["syscall_method"] = "Direct"
 	} else if syscall_method == "Indirect" {
